@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl of Great Price – Benjamin Hipolito</title>
+  <link rel="stylesheet" href="css/benja-style.css">
+</head>
+
+<script>
+  const fadeItems = document.querySelectorAll('.fade-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { threshold: 0.35 });
+
+  fadeItems.forEach(item => observer.observe(item));
+</script>
+
+<body>
+
+<nav class="main-nav">
+  <div class="nav-left">
+    <a href="Main.html" class="brand">Divine Nature</a>
+  </div>
+  <div class="nav-right">
+    <a href="moses.html">Moses</a>
+    <a href="Abraham.html">Abraham</a>
+    <a href="JosephSmith.html">Joseph Smith</a>
+    <a href="fun.html">Fun</a>
+  </div>
+</nav>
+
+
+  <!-- Page content -->
+  <div class="page-content">
+
+    <!-- prophet Section -->
+    <section class="hero">
+      <h1>Benjamin Hipolito</h1>
+      <p>In this section you will learn about me...</p>
+    </section>
+
+    <!-- Section 1 -->
+<section class="image-section" id="vision">
+  <div class="text fade-section">
+    <h2>Marriage</h2>
+    <p>
+      Not to long ago I had the chance to marry and amazing person which has become my biggest priority in life. The blessings of marriage are amazing and being able to receive then has been a crucial part in my life.
+    </p>
+  </div>
+  <img class="fade-section" src="image/B92A4897 (1).jpg" alt="Moses with God">
+</section>
+
+    <!-- Section 2 -->
+ <section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>Missionary Work</h2>
+    <p>
+      One of my priorities has always been missionary work. I love it and enjoy in every way possible. I had the opportunity to serve a mission in Spanish here in Salt Lake!
+    </p>
+  </div>
+  <img class="fade-section" src="image/missionaries.jpg" alt="Creation of the Earth">
+</section>
+
+    <!-- Section 3 -->
+<section class="image-section">
+  <div class="text fade-section">
+    <h2>Soccer</h2>
+    <p>
+      One of my biggest passions has always been soccer. I literally live for it, after gospel/marriage. 
+    </p>
+  </div>
+  <img class="fade-section" src="image/soccer.avif" alt="Adam and Eve">
+</section>
+
+    <!-- Section 4 -->
+<section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>Dancing</h2>
+    <p>
+      Another thing I enjoy doing is dancing. I love latino music in its full. 
+    </p>
+  </div>
+  <img class="fade-section" src="image/B92A5285 (1).jpg" alt="Zion">
+</section>
+
+  </div> <!-- END page-content -->
+
+    <!-- Scroll fade-in script -->
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // Fade in
+        } else {
+          entry.target.classList.remove('show'); // Fade out when leaving
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeSections.forEach(section => fadeObserver.observe(section));
+  </script>
+
+</body>
+</html>
+ 

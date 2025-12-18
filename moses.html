@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl of Great Price – Book of Moses</title>
+  <link rel="stylesheet" href="css/scratch-style.css">
+</head>
+
+<script>
+  const fadeItems = document.querySelectorAll('.fade-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { threshold: 0.35 });
+
+  fadeItems.forEach(item => observer.observe(item));
+</script>
+
+<body>
+
+<nav class="main-nav">
+  <div class="nav-left">
+    <a href="Main.html" class="brand">Divine Nature</a>
+  </div>
+  <div class="nav-right">
+    <a href="Abraham.html">Abraham</a>
+    <a href="JosephSmith.html">Joseph Smith</a>
+    <a href="MyIS201.html">My IS201 Work</a>
+  </div>
+</nav>
+
+
+  <!-- Page content -->
+  <div class="page-content">
+
+    <!-- prophet Section -->
+    <section class="hero">
+      <h1>Book of Moses</h1>
+      <p>In this book you will learn about three great principles</p>
+    </section>
+
+    <!-- Section 1 -->
+<section class="image-section" id="vision">
+  <div class="text fade-section">
+    <h2>The Vision of Moses</h2>
+    <p>
+      In the Pearl of Great Price, Moses receives a profound vision that expands his understanding 
+      of divine reality and his own calling. Through this revelation, he learns three central truths. 
+      First, he comes to understand the nature of God as a living, personal, and purposeful being 
+      whose work is centered on the immortality and eternal life of humanity. Second, Moses gains 
+      insight into the nature of divine sonship, recognizing Jesus Christ as the Only Begotten Son 
+      and Messiah, through whom God’s plan is accomplished and through whom humanity may become sons 
+      and daughters of God. Finally, Moses learns the nature of his own mission, discovering that he
+       has been chosen and prepared to participate in God’s work by leading, teaching, and covenanting 
+       with His people. This vision establishes Moses’s identity, authority, and purpose, grounding his 
+       prophetic mission in a broader understanding of God’s eternal plan.
+    </p>
+  </div>
+  <img class="fade-section" src="image/MoseswithGod.png" alt="Moses with God">
+</section>
+
+    <!-- Section 2 -->
+ <section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>The Creation of Earth - God's Nature</h2>
+    <p>
+      In his vision of the Creation recorded in the Pearl of Great Price, Moses is shown God’s role as the 
+      divine Creator who brings order, purpose, and meaning to the universe. Through this revelation, Moses 
+      learns that the creation of the earth was not a random or purely physical event, but a deliberate act 
+      guided by God’s wisdom and eternal purposes. God is revealed as a being who creates with intent, 
+      establishing laws, boundaries, and conditions that allow life to flourish and humanity to progress. 
+      This vision emphasizes God’s nature as purposeful and relational, creating the earth as a prepared 
+      place where His children may exercise agency, form covenants, and advance toward eternal life. The 
+      Creation narrative thus reinforces that God’s power is inseparably connected to His loving purpose 
+      for humanity.
+    </p>
+  </div>
+  <img class="fade-section" src="image/creation.jpg" alt="Creation of the Earth">
+</section>
+
+    <!-- Section 3 -->
+<section class="image-section">
+  <div class="text fade-section">
+    <h2>The Fall - Sonship's Nature</h2>
+    <p>
+      In the account of the Fall of Adam found in the Pearl of Great Price, Moses learns that the Fall was 
+      not merely a transgression, but a necessary step in God’s plan that revealed the redemptive role of 
+      Jesus Christ as the Messiah. Through the choices of Adam and Eve, humanity entered a mortal state marked 
+      by growth, agency, and accountability. Adam’s progression throughout the Fall demonstrates a movement 
+      from innocence to understanding, as he comes to recognize the purpose of mortality and the need for 
+      redemption through Christ. Eve likewise acts with wisdom and faith, enabling the continuation of God’s 
+      plan. Before leaving the Garden of Eden, Adam and Eve are clothed in coats of skins, a powerful symbol 
+      of Jesus Christ’s atoning sacrifice, signifying that redemption and protection from spiritual death come 
+      only through Him. This act foreshadows Christ’s role as the Savior, whose sacrifice covers humanity’s 
+      fallen condition and makes possible reconciliation with God.
+    </p>
+  </div>
+  <img class="fade-section" src="image/AdamandEve.jpg" alt="Adam and Eve">
+</section>
+
+    <!-- Section 4 -->
+<section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>The Creation of Zion - Our divine Mission</h2>
+    <p>
+      In Moses’s vision of Enoch, he learns profound truths about the nature of his own divine mission. Enoch, 
+      who initially describes himself as “slow of speech,” is nevertheless called by God to preach repentance 
+      to a fallen world, demonstrating that divine authority does not depend on human eloquence but on obedience 
+      and faith. As Enoch fulfills his stewardship, he is entrusted with the responsibility to care for others 
+      by proclaiming the gospel and inviting all to return to God. Through this vision, Moses comes to understand 
+      that his mission similarly requires compassion, courage, and unwavering commitment to the welfare of God’s 
+      children. God’s deep love and mercy are revealed as He weeps for the lost and continually extends 
+      opportunities for repentance, showing that His work is motivated not by judgment alone, but by a profound 
+      desire to redeem and gather His children. This vision affirms that Moses’s calling is rooted in service, 
+      stewardship, and the sacred duty to labor for the salvation of others.
+    </p>
+  </div>
+  <img class="fade-section" src="image/Enoch.jfif" alt="Zion">
+</section>
+
+  </div> <!-- END page-content -->
+
+    <!-- Scroll fade-in script -->
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // Fade in
+        } else {
+          entry.target.classList.remove('show'); // Fade out when leaving
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeSections.forEach(section => fadeObserver.observe(section));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pearl of Great Price</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="Moses.html">Divine Nature</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="moses.html">Moses</a></li>
+          <li class="nav-item"><a class="nav-link" href="Abraham.html">Abraham</a></li>
+          <li class="nav-item"><a class="nav-link" href="JosephSmith.html">Joseph Smith</a></li>
+          <li class="nav-item"><a class="nav-link" href="MyIS201.html">My IS201 Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- Main Section -->
+<section id="section1" class="text-white scroll-section" style="
+  background-image: url('image/Creation pilars.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative; /* important for absolute arrow positioning */
+">
+  <div class="container">
+    <h1 class="display-4">The Pearl Of Great Price</h1>
+    <p class="lead">Learn about your divine nature and who you can be like</p>
+    <p>
+      This website will show you the great and marvelous purpose God has bestowed upon you! 
+    </p>
+  </div>
+
+  <!-- Down arrow -->
+  <a href="#section2" class="down-arrow">&#x25BC;</a> <!-- points to next section -->
+</section>
+
+<!-- Divider -->
+<div class="divider"></div>
+
+<!-- SECTION 2 -->
+<section id="section2" class="scroll-section bg-two right-box" style="position: relative;">
+  <div class="content-box fade-in">
+    <h2>Divine Potential</h2>
+    <p>
+      The <em>Pearl of Great Price</em> offers profound insights into our divine nature and eternal
+      potential as sons and daughters of God. It teaches that we are not merely mortal beings, 
+      but spirits endowed with inherent worth and the capacity to grow, learn, and progress 
+      eternally. Through its teachings, we gain a deeper understanding of our divine identity, 
+      our relationship with God, and the eternal possibilities that await us. This sacred book 
+      inspires us to embrace our divine potential, make righteous choices, and strive to 
+      reflect God’s image in our thoughts, actions, and lives, recognizing that our mortal 
+      journey is a vital step in fulfilling the greatness for which we were created.
+    </p>
+  </div>
+
+  <!-- Down arrow -->
+  <a href="#section3" class="down-arrow">&#x25BC;</a>
+</section>
+
+<!-- Divider -->
+<div class="divider"></div>
+
+<!-- SECTION 3 -->
+<section id="section3" class="scroll-section bg-three left-box" style="position: relative;">
+  <div class="content-box fade-in">
+    <h2>Following the Prophets</h2>
+    <p>
+      The <em>Pearl of Great Price</em> teaches us about the importance of prophets as God’s chosen 
+      messengers to guide His children. Throughout this sacred book, we learn that prophets are 
+      called to testify of God’s truths, provide direction, and help us understand His will in 
+      our lives. By following their inspired counsel, we can navigate life’s challenges with 
+      greater clarity, make righteous choices, and avoid spiritual pitfalls. Heeding the words 
+      of prophets strengthens our faith, deepens our relationship with God, and helps us align 
+      our lives with His eternal plan. In the <em>Pearl of Great Price</em>, we read about prophets 
+      such as Abraham, Moses, and Joseph Smith, whose lives and teachings exemplify the blessings 
+      and guidance that come from following God’s chosen servants. This book reminds us that 
+      listening to and following the prophets is a key step in receiving guidance, protection, 
+      and the blessings that come from living in harmony with God’s purposes.
+    </p>
+  </div>
+
+  <!-- Bottom transparent boxes -->
+  <div class="bottom-boxes">
+    <a href="#top" class="bottom-box">Back to the Top</a>
+    <a href="moses.html" class="bottom-box">Let's Begin</a>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const boxes = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');  // fade in
+      } else {
+        entry.target.classList.remove('show'); // fade out
+      }
+    });
+  }, { threshold: 0.2 }); // 20% of box visible triggers fade-in
+
+  boxes.forEach(box => observer.observe(box));
+});
+</script>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Benjamin Hipolito. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+</html>

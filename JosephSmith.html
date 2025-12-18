@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl of Great Price – Joseph Smith History</title>
+  <link rel="stylesheet" href="css/smith-style.css">
+</head>
+
+<script>
+  const fadeItems = document.querySelectorAll('.fade-section');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { threshold: 0.35 });
+
+  fadeItems.forEach(item => observer.observe(item));
+</script>
+
+<body>
+
+<nav class="main-nav">
+  <div class="nav-left">
+    <a href="Main.html" class="brand">Divine Nature</a>
+  </div>
+  <div class="nav-right">
+    <a href="moses.html">Moses</a>
+    <a href="Abraham.html">Abraham</a>
+    <a href="MyIS201.html">My IS201 Work</a>
+  </div>
+</nav>
+
+
+  <!-- Page content -->
+  <div class="page-content">
+
+    <!-- prophet Section -->
+    <section class="hero">
+      <h1>Joseph Smith History</h1>
+      <p>In this book you will learn about three great principles</p>
+      <a href="#vision" class="hero-link">Where do we start?</a>
+    </section>
+
+    <!-- Section 1 -->
+<section class="image-section" id="vision">
+  <div class="text fade-section">
+    <h2>A young man seeking for truth</h2>
+    <p>
+      From a young age, Joseph Smith had a deep desire to know the truth. He was troubled by the conflicting teachings he encountered and longed to understand which church, if any, was true. His earnest prayers and sincere search for guidance reflected a remarkable spiritual curiosity and a humble heart. Joseph’s quest was not casual; he genuinely wanted to align his life with God’s will, showing that his desire for truth was both personal and eternal in scope.
+    </p>
+  </div>
+  <img class="fade-section" src="image/truth.jpg" alt="Moses with God">
+</section>
+
+    <!-- Section 2 -->
+ <section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>Ask of God</h2>
+    <p>
+      Joseph Smith’s first vision was a pivotal moment in his quest. In a grove near his home, he prayed for guidance and was visited by God the Father and Jesus Christ. One striking aspect of this vision is that God demonstrated His intimate knowledge of His children, showing that He knows each person personally by name. This powerful revelation reassured Joseph that God cares deeply for each individual and that seeking truth sincerely invites divine attention and guidance.
+    </p>
+  </div>
+  <img class="fade-section" src="image/firstvision.jpeg" alt="Creation of the Earth">
+</section>
+
+    <!-- Section 3 -->
+<section class="image-section">
+  <div class="text fade-section">
+    <h2>Moroni's appearance</h2>
+    <p>
+      Later, the angel Moroni appeared to Joseph, further guiding him in his mission. Moroni revealed the existence of ancient records that contained the fullness of the gospel, buried nearby. This appearance strengthened Joseph’s understanding that God provides help to those who earnestly seek truth. Through Moroni’s instructions, Joseph gained the tools he needed to bring forth the Book of Mormon, fulfilling his desire to share God’s knowledge and truth with the world.
+    </p>
+  </div>
+  <img class="fade-section" src="image/moroni.jpeg" alt="Adam and Eve">
+</section>
+
+    <!-- Section 4 -->
+<section class="image-section reverse">
+  <div class="text fade-section">
+    <h2>FIRST VISION VIDEO</h2>
+  </div>
+  <div class="fade-section video-wrapper">
+    <iframe 
+      src="https://www.youtube.com/embed/RBvk_6_dW6k?si=6RSeuW3KHGANGuJm" 
+      title="YouTube video"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+  </div> <!-- END page-content -->
+
+    <!-- Scroll fade-in script -->
+  <script>
+    const fadeSections = document.querySelectorAll('.fade-section');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show'); // Fade in
+        } else {
+          entry.target.classList.remove('show'); // Fade out when leaving
+        }
+      });
+    }, { threshold: 0.3 });
+
+    fadeSections.forEach(section => fadeObserver.observe(section));
+  </script>
+
+</body>
+</html>
+ 

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pearl of Great Price – Book of Abraham</title>
+  <link rel="stylesheet" href="css/abraham-style.css">
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav class="main-nav">
+  <div class="nav-left">
+    <a href="Main.html" class="brand">Divine Nature</a>
+  </div>
+  <div class="nav-right">
+    <a href="moses.html">Moses</a>
+    <a href="JosephSmith.html">Joseph Smith</a>
+    <a href="MyIS201.html">My IS201 Work</a>
+  </div>
+</nav>
+
+<!-- ========================= -->
+<!-- BACKGROUND SECTION 1 -->
+<!-- ========================= -->
+<section class="bg-section bg-one">
+  <section class="hero">
+    <h1>Book of Abraham</h1>
+    <p>In this book you will learn about true peace and happiness</p>
+  </section>
+</section>
+
+<!-- DIVIDER -->
+<div class="bg-divider"></div>
+
+<!-- ========================= -->
+<!-- BACKGROUND SECTION 2 -->
+<!-- ========================= -->
+<section class="bg-section bg-two">
+
+  <!-- Section 1 -->
+  <section class="image-section" id="vision">
+    <div class="text fade-section">
+      <h2>A Father of many Nations</h2>
+      <p>
+        The Book of Abraham portrays Abraham’s departure from Ur as an act of faith driven by his desire to obtain peace, righteousness, and greater knowledge of God. Living among a people marked by idolatry and corruption, Abraham sought the blessings of the fathers, including the priesthood, which he understood as the means to serve God and bless others. His willingness to leave his homeland reflects a conscious separation from false worship and a commitment to divine truth. Through priesthood power, Abraham aspired not to personal greatness but to become a father of many nations, extending God’s covenant and blessings to future generations. This narrative emphasizes that true peace and lasting influence come through obedience, covenantal faithfulness, and alignment with God’s eternal purposes.
+      </p>
+    </div>
+    <img class="fade-section" src="image/ur.jpeg" alt="Kolob">
+  </section>
+
+  <!-- Section 2 -->
+  <section class="image-section reverse">
+    <div class="text fade-section">
+      <h2>Covenants and Blessings</h2>
+      <p>
+        The Book of Abraham emphasizes covenants as binding promises between God and His children, carrying both privileges and responsibilities. Through the Abrahamic covenant, Abraham is promised posterity, land, priesthood, and the responsibility to bless all nations. These blessings are not solely personal but are intended to extend universally, demonstrating God’s redemptive purpose for humanity. Obedience to covenant law enables individuals and families to participate in God’s work and inherit eternal promises.
+      </p>
+    </div>
+    <img class="fade-section" src="image/Kolob.jfif" alt="Nobles">
+  </section>
+
+  <!-- Section 3 -->
+  <section class="image-section">
+    <div class="text fade-section">
+      <h2>Intelligence and Light</h2>
+      <p>
+        The Book of Abraham teaches that intelligence is eternal and central to God’s plan. Intelligence, associated with light and truth, exists independently and is organized by God for righteous purposes. This principle highlights humanity’s divine potential to grow, learn, and progress through obedience and experience. God governs through law, and greater light is given to those who receive and act upon truth. The doctrine of intelligence underscores God’s nature as a God of order and enlightenment, inviting His children to become more like Him.
+      </p>
+    </div>
+    <img class="fade-section" src="image/NobleandGreat.jpg" alt="Adam and Eve">
+  </section>
+
+  <!-- Section 4 -->
+  <section class="image-section reverse">
+    <div class="text fade-section">
+      <h2>The Priesthood Lineage</h2>
+      <p>
+        In the Book of Abraham, priesthood is presented as divinely authorized power passed through chosen lineage, beginning with the Fathers and extending through Abraham. Abraham learns that priesthood authority is connected not merely to ancestry but to righteousness and divine appointment. This principle reveals God’s orderly governance and His method of working through families to administer sacred ordinances and preserve divine knowledge on the earth. The priesthood establishes continuity between heaven and earth and empowers individuals to act in God’s name for the blessing of others.
+      </p>
+    </div>
+    <img class="fade-section" src="image/lineage.webp" alt="Zion">
+  </section>
+
+</section>
+
+<!-- ========================= -->
+<!-- SCROLL FADE SCRIPT -->
+<!-- ========================= -->
+<script>
+  const fadeSections = document.querySelectorAll('.fade-section');
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  }, { threshold: 0.35 });
+
+  fadeSections.forEach(section => fadeObserver.observe(section));
+</script>
+
+</body>
+</html>
