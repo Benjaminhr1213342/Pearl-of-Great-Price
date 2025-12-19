@@ -1,0 +1,150 @@
+/* ===== Full-screen scroll sections ===== */
+.scroll-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== Navbar styling ===== */
+.navbar {
+  height: 70px;             
+  position: sticky;         
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* optional shadow */
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;        
+  font-weight: bold;
+}
+
+/* ===== Navbar right-side links ===== */
+.navbar-nav .nav-link {
+  font-size: 1.2rem;        /* bigger text */
+  padding: 0.5rem 1rem;     /* adds space around text for the curve */
+  border-radius: 15px;      /* rounded edges */
+  transition: background 0.3s; /* smooth hover effect */
+}
+
+/* Optional: hover effect to make it look nice */
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* subtle highlight on hover */
+}
+
+/* Down arrow */
+.down-arrow {
+  position: absolute;
+  bottom: 60px;           /* distance from bottom */
+  left: 50%;              /* center horizontally */
+  transform: translateX(-50%);
+  font-size: 4rem;      /* size of arrow */
+  color: rgba(255,255,255,0.4); /* semi-transparent */
+  text-decoration: none;
+  transition: color 0.3s;
+  z-index: 10;
+}
+
+.down-arrow:hover {
+  color: rgba(255,255,255,0.7); /* fully visible on hover */
+}
+
+/* ===== Background images ===== */
+.bg-two {
+  background-image: url("https://i.pinimg.com/originals/dd/4d/37/dd4d37c3cf0a6b206b5874f1c4e0dbe2.jpg");
+}
+
+.bg-three {
+  background-image: url("https://latterdaysaintmag.com/wp-content/uploads/2018/06/441-many-prophets-1024x576.jpg");
+}
+
+/* Container for the two boxes */
+.bottom-boxes {
+  position: absolute;
+  bottom: 30px;          /* distance from bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;             /* space between boxes */
+  z-index: 10;
+}
+
+/* Individual boxes */
+.bottom-box {
+  background-color: rgba(33,37,41,0.6); /* transparent dark */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.bottom-box:hover {
+  background-color: rgba(33,37,41,0.9); /* darker on hover */
+}
+
+/* ===== Divider styling ===== */
+.divider {
+  height: 4px; /* thin divider */
+  background-color: #212529; /* match navbar color */
+  width: 100%;
+}
+
+/* ===== Content box ===== */
+.content-box {
+  background-color: #212529;
+  color: white;
+  padding: 2.5rem;
+  max-width: 600px;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+/* ===== Title and paragraph spacing ===== */
+.content-box h2 {
+  margin-bottom: 1rem; /* space below title */
+  font-size: 1.8rem;   /* slightly bigger title */
+}
+
+.content-box p {
+  font-size: 1.1rem;   /* slightly larger paragraph text */
+  line-height: 1.6;    /* better readability */
+  margin-top: 0;
+}
+
+/* ===== Left / Right alignment ===== */
+.left-box {
+  justify-content: flex-end;
+  padding-right: 6%;
+}
+
+.right-box {
+  justify-content: flex-start;
+  padding-left: 6%;
+}
+
+/* ===== Fade-in animation ===== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Mobile responsiveness ===== */
+@media (max-width: 768px) {
+  .right-box,
+  .left-box {
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

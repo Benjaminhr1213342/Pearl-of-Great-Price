@@ -1,0 +1,144 @@
+/* ===== Body & Background ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+
+  background-image: url("../image/2646579.jpg");
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-color: #212529;
+}
+
+/* ===== Navbar ===== */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212529;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 999;
+}
+
+.nav-left .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-right a {
+  color: #cccccc;
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  color: #9CAF88;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero h1 {
+  font-size: 100px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 50px;
+  font-style: italic;
+  margin: 1rem 0;
+}
+
+.hero-link {
+  font-size: 24px;
+  color: #9CAF88;
+  text-decoration: none;
+}
+
+/* ===== Fade-in / Fade-out ===== */
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Image Sections ===== */
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 4rem;
+  gap: 3rem;
+}
+
+.image-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ===== Transparent Text Box ===== */
+.image-section .text {
+  width: 45%;
+  background: rgba(0, 0, 0, 0.45); /* transparent box */
+  padding: 2rem;
+  border-radius: 18px;
+  backdrop-filter: blur(4px);
+}
+
+/* ===== Images ===== */
+.image-section img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 60px; }
+  .hero p { font-size: 30px; }
+
+  .image-section,
+  .image-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section img {
+    width: 80%;
+    margin: 2rem 0;
+  }
+
+  .image-section .text {
+    width: 100%;
+  }
+}
